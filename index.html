@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsitive Diagnostics - AI-Powered Pet Health Monitoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-primary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-bark { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .gradient-skin { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .gradient-air { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .gradient-motion { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+        .animate-glow { animation: glow 2s ease-in-out infinite; }
+        @keyframes glow { 0%, 100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); } 50% { box-shadow: 0 0 40px rgba(102, 126, 234, 0.8); } }
+    </style>
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 gradient-primary opacity-20"></div>
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.3) 0%, transparent 50%);"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center animate-float">
+                <div class="inline-block mb-6">
+                    <div class="w-32 h-32 rounded-3xl gradient-primary animate-glow flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+                    Pawsitive Diagnostics
+                </h1>
+                <p class="text-2xl md:text-3xl text-gray-300 mb-8 font-light">
+                    AI-Powered Pet Health Monitoring System
+                </p>
+                <p class="text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
+                    Ultra-affordable (under ₹1000) smart collar with 4 AI modules for 24/7 health monitoring. Shifting pet care from reactive to proactive.
+                </p>
+                <div class="flex gap-4 justify-center flex-wrap">
+                    <a href="#features" class="px-8 py-4 gradient-primary rounded-2xl font-bold text-lg hover:scale-105 transition-transform">
+                        Explore Features
+                    </a>
+                    <a href="https://github.com/adilsukumar/Pawsitive_Diagnostics" target="_blank" class="px-8 py-4 glass rounded-2xl font-bold text-lg hover:scale-105 transition-transform">
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-black text-center mb-16">The Problem</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-4">😢</div>
+                    <h3 class="text-2xl font-bold mb-4">Silent Suffering</h3>
+                    <p class="text-gray-300">Pets can't communicate pain. Life-threatening conditions detected too late.</p>
+                </div>
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-4">💰</div>
+                    <h3 class="text-2xl font-bold mb-4">Cost Barrier</h3>
+                    <p class="text-gray-300">Traditional vet care is expensive and inaccessible for many communities.</p>
+                </div>
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-4">🏥</div>
+                    <h3 class="text-2xl font-bold mb-4">Reactive Healthcare</h3>
+                    <p class="text-gray-300">Current system treats symptoms, not prevention. Late diagnosis = higher costs.</p>
+                </div>
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-4">🌍</div>
+                    <h3 class="text-2xl font-bold mb-4">Public Health Risk</h3>
+                    <p class="text-gray-300">Unmonitored stray animals pose disease transmission risks to communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-black text-center mb-16">4 AI-Powered Modules</h2>
+            
+            <!-- BarkSense -->
+            <div class="max-w-6xl mx-auto mb-16">
+                <div class="glass rounded-3xl p-12 hover:scale-105 transition-transform">
+                    <div class="flex items-center gap-6 mb-6">
+                        <div class="w-20 h-20 rounded-2xl gradient-bark flex items-center justify-center">
+                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-black">🎙️ BarkSense AI</h3>
+                            <p class="text-xl text-gray-400">Acoustic Analysis Engine</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-300 mb-6">
+                        ML-driven acoustic analysis that monitors vocalizations for physiological distress. Detects pain, aggression, fear, and rabies symptoms through bark patterns.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-pink-400">6</div>
+                            <div class="text-sm text-gray-400">Emotion Categories</div>
+                        </div>
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-pink-400">1000+</div>
+                            <div class="text-sm text-gray-400">Audio Samples</div>
+                        </div>
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-pink-400">3s</div>
+                            <div class="text-sm text-gray-400">Real-time Analysis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SkinSense -->
+            <div class="max-w-6xl mx-auto mb-16">
+                <div class="glass rounded-3xl p-12 hover:scale-105 transition-transform">
+                    <div class="flex items-center gap-6 mb-6">
+                        <div class="w-20 h-20 rounded-2xl gradient-skin flex items-center justify-center">
+                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-black">🔬 SkinSense AI</h3>
+                            <p class="text-xl text-gray-400">UV Fluorescence Detection</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-300 mb-6">
+                        UV LED light detects microbial infections via fluorescence. AI-powered image analysis identifies rashes, allergies, and skin pathologies hidden under fur.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-cyan-400">10+</div>
+                            <div class="text-sm text-gray-400">Conditions Detected</div>
+                        </div>
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-cyan-400">365nm</div>
+                            <div class="text-sm text-gray-400">UV Wavelength</div>
+                        </div>
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-cyan-400">AI</div>
+                            <div class="text-sm text-gray-400">Gemini Vision</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AirSense -->
+            <div class="max-w-6xl mx-auto mb-16">
+                <div class="glass rounded-3xl p-12 hover:scale-105 transition-transform">
+                    <div class="flex items-center gap-6 mb-6">
+                        <div class="w-20 h-20 rounded-2xl gradient-air flex items-center justify-center">
+                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-black">💨 AirSense AI</h3>
+                            <p class="text-xl text-gray-400">Environmental Intelligence</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Proactive environmental monitoring identifies hazardous gases and toxic environments. Detects poisoning attempts, gas leaks, and air quality issues.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-green-400">Breed-Specific</div>
+                            <div class="text-sm text-gray-400">Safe Thresholds</div>
+                        </div>
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-green-400">5min</div>
+                            <div class="text-sm text-gray-400">Baseline Learning</div>
+                        </div>
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-green-400">Real-time</div>
+                            <div class="text-sm text-gray-400">Hazard Detection</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MotionSense -->
+            <div class="max-w-6xl mx-auto">
+                <div class="glass rounded-3xl p-12 hover:scale-105 transition-transform">
+                    <div class="flex items-center gap-6 mb-6">
+                        <div class="w-20 h-20 rounded-2xl gradient-motion flex items-center justify-center">
+                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-black">🏃 MotionSense AI</h3>
+                            <p class="text-xl text-gray-400">Biomechanical Analysis</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-300 mb-6">
+                        MPU-6050 IMU captures movement data to analyze GAIT, posture, and activity. Detects neurological disorders, arthritis, and seizure activity.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-yellow-400">6-Axis</div>
+                            <div class="text-sm text-gray-400">Gyro + Accel</div>
+                        </div>
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-yellow-400">24/7</div>
+                            <div class="text-sm text-gray-400">Monitoring</div>
+                        </div>
+                        <div class="bg-gray-800 rounded-xl p-4">
+                            <div class="text-2xl font-bold text-yellow-400">GAIT</div>
+                            <div class="text-sm text-gray-400">Analysis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Use Case -->
+    <section class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-black text-center mb-16">Government & Public Health</h2>
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <p class="text-xl text-gray-300">
+                    Designed for government deployment to monitor stray animals, detect poisoning, prevent rabies outbreaks, and protect public health.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-5xl mb-4">🗺️</div>
+                    <h3 class="text-2xl font-bold mb-4">Poisoning Detection</h3>
+                    <p class="text-gray-300">Real-time detection of toxic gas exposure. Identify poisoning hotspots and protect communities.</p>
+                </div>
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-5xl mb-4">🦠</div>
+                    <h3 class="text-2xl font-bold mb-4">Rabies Prevention</h3>
+                    <p class="text-gray-300">Early detection of aggressive behavior and neurological symptoms. Quarantine before human contact.</p>
+                </div>
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-5xl mb-4">📊</div>
+                    <h3 class="text-2xl font-bold mb-4">Disease Surveillance</h3>
+                    <p class="text-gray-300">City-wide health monitoring network. Track outbreaks and vaccination coverage in real-time.</p>
+                </div>
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-5xl mb-4">🌱</div>
+                    <h3 class="text-2xl font-bold mb-4">Environmental Mapping</h3>
+                    <p class="text-gray-300">Stray dogs as mobile sensors. Map air quality and identify pollution sources across the city.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Developments -->
+    <section class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-black text-center mb-16">Future Developments</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-4">📍</div>
+                    <h3 class="text-2xl font-bold mb-4">GPS Tracking</h3>
+                    <p class="text-gray-300">IDUINO GT-U7 module for real-time location tracking and geofencing.</p>
+                </div>
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-4">💡</div>
+                    <h3 class="text-2xl font-bold mb-4">LED Indicators</h3>
+                    <p class="text-gray-300">Green = Safe to approach. Red = Contagious disease detected.</p>
+                </div>
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-4">🔬</div>
+                    <h3 class="text-2xl font-bold mb-4">BME688 Sensor</h3>
+                    <p class="text-gray-300">10x more accurate gas detection with AI-enhanced classification.</p>
+                </div>
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-4">🎤</div>
+                    <h3 class="text-2xl font-bold mb-4">INMP441 Mic</h3>
+                    <p class="text-gray-300">Professional MEMS microphone for crystal-clear audio capture.</p>
+                </div>
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-4">❤️</div>
+                    <h3 class="text-2xl font-bold mb-4">Heart Rate Monitor</h3>
+                    <p class="text-gray-300">Max30102 pulse oximeter for BPM and SpO₂ monitoring.</p>
+                </div>
+                <div class="glass rounded-3xl p-8 hover:scale-105 transition-transform">
+                    <div class="text-5xl mb-4">🐱</div>
+                    <h3 class="text-2xl font-bold mb-4">Multi-Species</h3>
+                    <p class="text-gray-300">Expanding to cats, livestock (cows, horses, goats), and exotic pets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-black text-center mb-16">Impact & SDG Alignment</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div class="glass rounded-3xl p-12">
+                    <div class="text-6xl mb-6 text-center">🏥</div>
+                    <h3 class="text-3xl font-bold mb-6 text-center">SDG 3: Good Health</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li>✅ Proactive health monitoring prevents late-stage detection</li>
+                        <li>✅ Affordable healthcare access for all pet owners</li>
+                        <li>✅ 24/7 surveillance ensures continuous protection</li>
+                        <li>✅ Public health protection through disease prevention</li>
+                        <li>✅ Rabies elimination through early detection</li>
+                    </ul>
+                </div>
+                <div class="glass rounded-3xl p-12">
+                    <div class="text-6xl mb-6 text-center">🚀</div>
+                    <h3 class="text-3xl font-bold mb-6 text-center">SDG 9: Innovation</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li>✅ Cutting-edge AI/ML integration in pet healthcare</li>
+                        <li>✅ Affordable IoT solution (under ₹1000)</li>
+                        <li>✅ Accessible technology for rural communities</li>
+                        <li>✅ Scalable platform for global deployment</li>
+                        <li>✅ Smart city infrastructure for monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto text-center">
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-5xl font-black gradient-primary bg-clip-text text-transparent mb-2">₹1000</div>
+                    <div class="text-gray-400">Ultra-Affordable</div>
+                </div>
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-5xl font-black gradient-bark bg-clip-text text-transparent mb-2">4</div>
+                    <div class="text-gray-400">AI Modules</div>
+                </div>
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-5xl font-black gradient-skin bg-clip-text text-transparent mb-2">24/7</div>
+                    <div class="text-gray-400">Monitoring</div>
+                </div>
+                <div class="glass rounded-3xl p-8">
+                    <div class="text-5xl font-black gradient-air bg-clip-text text-transparent mb-2">350+</div>
+                    <div class="text-gray-400">Breeds Supported</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-black mb-8">Join the Revolution</h2>
+            <p class="text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                Help us make pet healthcare accessible to everyone. From household pets to stray animals, from rural villages to smart cities.
+            </p>
+            <div class="flex gap-6 justify-center flex-wrap">
+                <a href="https://github.com/adilsukumar/Pawsitive_Diagnostics" target="_blank" class="px-10 py-5 gradient-primary rounded-2xl font-bold text-xl hover:scale-105 transition-transform">
+                    View on GitHub
+                </a>
+                <a href="mailto:contact@pawsitivediagnostics.com" class="px-10 py-5 glass rounded-2xl font-bold text-xl hover:scale-105 transition-transform">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="text-3xl font-black mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Pawsitive Diagnostics
+                </div>
+                <p class="text-gray-400 mb-6">Made with ❤️ by Pawsitive Innovators</p>
+                <div class="flex gap-6 justify-center text-gray-400 mb-6">
+                    <span>Adil Sukumar</span>
+                    <span>•</span>
+                    <span>Snehal Dixit</span>
+                    <span>•</span>
+                    <span>Anakha Shaji</span>
+                </div>
+                <div class="flex gap-4 justify-center text-sm text-gray-500">
+                    <span>Version 1.0.0</span>
+                    <span>•</span>
+                    <span>Patent Pending</span>
+                    <span>•</span>
+                    <span>SDG 3 & 9 Aligned</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.animate-float');
+            if (parallax) {
+                parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
