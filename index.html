@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pawsitive Diagnostics | FAR AWAY 2026</title>
+    <link rel="icon" href="./assets/logo.jpg">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,8 +127,9 @@
     <nav class="fixed w-full z-50 glass-panel border-b-0 transition-all duration-300 py-4">
         <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-accent-red to-accent-pink flex items-center justify-center font-display font-bold text-xl shadow-lg">P</div>
-                <span class="font-display font-bold text-xl tracking-tight text-white">Pawsitive</span>
+                <img src="./assets/logo.jpg" alt="Pawsitive Diagnostics Logo" class="w-10 h-10 rounded-xl object-cover shadow-lg" />
+                <span class="font-display font-bold text-xl tracking-tight text-white hidden sm:block">Pawsitive Diagnostics</span>
+                <span class="font-display font-bold text-xl tracking-tight text-white sm:hidden">Pawsitive</span>
             </div>
             <div class="hidden lg:flex gap-5 font-medium text-sm text-gray-300">
                 <a href="#crisis" class="hover:text-white transition-colors">The Problem</a>
@@ -208,16 +210,22 @@
                 <h4 class="text-2xl font-bold mb-8 text-center">The Silent Disease Activation Curve</h4>
                 
                 <div class="relative h-[400px] w-full flex items-center justify-center">
-                    <div class="absolute bottom-10 left-10 right-10 h-1 bg-gray-800 rounded-full">
+                    <!-- X Axis -->
+                    <div class="absolute bottom-10 left-16 md:left-24 right-10 h-1 bg-gray-800 rounded-full">
                         <div class="absolute top-4 left-[12%] text-sm text-gray-500">Month 3</div>
                         <div class="absolute top-4 left-[75%] text-sm text-gray-500">Month 18</div>
                     </div>
                     
-                    <svg class="absolute inset-0 w-full h-full pb-10 pl-10 pr-10" preserveAspectRatio="none" viewBox="0 0 1000 400">
+                    <!-- Y Axis -->
+                    <div class="absolute bottom-10 top-10 left-16 md:left-24 w-1 bg-gray-800 rounded-full">
+                        <div class="absolute top-1/2 -left-20 md:-left-24 -translate-y-1/2 -rotate-90 text-xs md:text-sm text-gray-500 font-bold tracking-widest uppercase whitespace-nowrap">Disease Severity</div>
+                    </div>
+                    
+                    <svg class="absolute inset-0 w-full h-full pb-10 pl-16 md:pl-24 pr-10" preserveAspectRatio="none" viewBox="0 0 1000 400">
                         <path d="M 0 350 Q 500 350 800 150 T 1000 0" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="4" />
                     </svg>
                     
-                    <div class="absolute left-[15%] bottom-[20%] flex flex-col items-center">
+                    <div class="absolute left-[20%] bottom-[20%] flex flex-col items-center">
                         <div class="w-1 h-[250px] bg-accent-red/50 absolute bottom-0 z-0"></div>
                         <div class="w-6 h-6 rounded-full bg-accent-red animate-pulse shadow-[0_0_30px_rgba(255,42,95,0.8)] z-10"></div>
                         <div class="absolute top-[-80px] text-center w-48 -ml-24 bg-dark-900 border border-accent-red/30 p-3 rounded-xl shadow-xl">
@@ -226,7 +234,7 @@
                         </div>
                     </div>
 
-                    <div class="absolute left-[78%] bottom-[55%] flex flex-col items-center opacity-50">
+                    <div class="absolute left-[80%] bottom-[55%] flex flex-col items-center opacity-50">
                         <div class="w-1 h-[250px] bg-gray-500/50 absolute bottom-0 z-0 border-l border-dashed border-gray-400"></div>
                         <div class="w-4 h-4 rounded-full bg-gray-400 z-10"></div>
                         <div class="absolute top-[-60px] text-center w-48 -ml-24">
