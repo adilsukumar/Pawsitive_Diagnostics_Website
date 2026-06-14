@@ -127,12 +127,12 @@
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-accent-red to-accent-pink flex items-center justify-center font-display font-bold text-xl shadow-lg">P</div>
                 <span class="font-display font-bold text-xl tracking-tight text-white">Pawsitive</span>
             </div>
-            <div class="hidden lg:flex gap-8 font-medium text-sm text-gray-300">
-                <a href="#crisis" class="hover:text-white transition-colors">The Curve</a>
+            <div class="hidden lg:flex gap-6 font-medium text-sm text-gray-300">
                 <a href="#compare" class="hover:text-white transition-colors">Diagnostics</a>
-                <a href="#agents" class="hover:text-white transition-colors">8 AI Senses</a>
-                <a href="#hardware" class="hover:text-white transition-colors">PCTG Core</a>
-                <a href="#flywheel" class="hover:text-white transition-colors">Flywheel</a>
+                <a href="#agents" class="hover:text-white transition-colors">8 Senses</a>
+                <a href="#hardware" class="hover:text-white transition-colors">Hardware</a>
+                <a href="#business" class="hover:text-white transition-colors">Go-To-Market</a>
+                <a href="#results" class="hover:text-white transition-colors">Results</a>
             </div>
             <div class="flex items-center gap-3">
                 <a href="https://github.com/adilsukumar/Pawsitive_Diagnostics" target="_blank" class="hidden sm:flex px-5 py-2 glass-panel text-white rounded-full font-semibold text-sm hover:bg-white/10 transition-colors">
@@ -191,19 +191,15 @@
                 <h4 class="text-2xl font-bold mb-8 text-center">The Silent Disease Activation Curve</h4>
                 
                 <div class="relative h-[400px] w-full flex items-center justify-center">
-                    <!-- Custom Graph Visualization -->
                     <div class="absolute bottom-10 left-10 right-10 h-1 bg-gray-800 rounded-full">
-                        <!-- Month Markers -->
                         <div class="absolute top-4 left-[12%] text-sm text-gray-500">Month 3</div>
                         <div class="absolute top-4 left-[75%] text-sm text-gray-500">Month 18</div>
                     </div>
                     
-                    <!-- The Curve -->
                     <svg class="absolute inset-0 w-full h-full pb-10 pl-10 pr-10" preserveAspectRatio="none" viewBox="0 0 1000 400">
                         <path d="M 0 350 Q 500 350 800 150 T 1000 0" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="4" />
                     </svg>
                     
-                    <!-- Pawsitive AI Detection -->
                     <div class="absolute left-[15%] bottom-[20%] flex flex-col items-center">
                         <div class="w-1 h-[250px] bg-accent-red/50 absolute bottom-0 z-0"></div>
                         <div class="w-6 h-6 rounded-full bg-accent-red animate-pulse shadow-[0_0_30px_rgba(255,42,95,0.8)] z-10"></div>
@@ -213,7 +209,6 @@
                         </div>
                     </div>
 
-                    <!-- Human Detection -->
                     <div class="absolute left-[78%] bottom-[55%] flex flex-col items-center opacity-50">
                         <div class="w-1 h-[250px] bg-gray-500/50 absolute bottom-0 z-0 border-l border-dashed border-gray-400"></div>
                         <div class="w-4 h-4 rounded-full bg-gray-400 z-10"></div>
@@ -476,91 +471,170 @@
         </div>
     </section>
 
-    <!-- Chapter 5: Workflow & Flywheel -->
-    <section id="flywheel" class="py-32 relative z-10">
+    <!-- Chapter 5: Go-To-Market & Business Model -->
+    <section id="business" class="py-32 relative z-10">
         <div class="max-w-7xl mx-auto px-6">
-            
-            <div class="text-center mb-20" data-aos="fade-up">
-                <h2 class="text-accent-blue font-bold tracking-widest uppercase mb-4">The Ecosystem</h2>
-                <h3 class="text-4xl md:text-5xl font-display font-bold">Collar to Clinic & The Data Flywheel.</h3>
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-accent-blue font-bold tracking-widest uppercase mb-4">Go-To-Market Strategy</h2>
+                <h3 class="text-4xl md:text-6xl font-display font-bold">The Dual-Market Bridge.</h3>
+                <p class="text-gray-400 mt-4 text-xl max-w-3xl mx-auto">Targeting a ₹26.1 Lakh Crore global opportunity currently operating without reliable diagnostics.</p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-16">
-                <!-- Collar to Clinic Flow -->
-                <div class="glass-card p-10 rounded-3xl" data-aos="fade-right">
-                    <h4 class="text-2xl font-bold mb-8">From Collar to Clinic Workflow</h4>
-                    <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
-                        
-                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-dark-800 text-gray-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">1</div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-4 rounded-xl text-sm"><strong class="text-white">Smart Collar:</strong> Continuous edge monitoring of vitals.</div>
-                        </div>
-                        
-                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-dark-800 text-gray-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">2</div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-4 rounded-xl text-sm"><strong class="text-white">Mobile App:</strong> Displays baseline behaviors.</div>
-                        </div>
-
-                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-accent-pink bg-accent-pink/20 text-accent-pink shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">3</div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel border-accent-pink/30 p-4 rounded-xl text-sm"><strong class="text-accent-pink">AI Analysis:</strong> Proprietary ML flags subtle anomalies.</div>
-                        </div>
-
-                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-accent-red bg-accent-red/20 text-accent-red shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">4</div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel border-accent-red/30 p-4 rounded-xl text-sm"><strong class="text-accent-red">Contextual Alert:</strong> Actionable, plain-English notifications.</div>
-                        </div>
-
-                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-dark-800 text-gray-300 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">5</div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-4 rounded-xl text-sm"><strong class="text-white">Video Consult:</strong> One-tap vet connection with pre-analyzed dashboards.</div>
-                        </div>
-
+            <!-- Market Phases -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="glass-card p-10 rounded-3xl border-t border-accent-blue" data-aos="fade-right">
+                    <h4 class="text-3xl font-display font-bold mb-2">Phase 1: India</h4>
+                    <p class="text-accent-blue font-bold tracking-widest uppercase text-sm mb-6">Development & Scale</p>
+                    <p class="text-gray-400 mb-6">Targeting rapid user acquisition driven by an 18% annual growth in pet adoption and the critical public health need for rabies detection.</p>
+                    <div class="bg-dark-900/50 p-4 rounded-xl border border-white/5">
+                        <span class="text-sm text-gray-400">Goal:</span>
+                        <p class="font-bold">High-volume algorithm training</p>
                     </div>
                 </div>
 
-                <!-- The Flywheel & Demographics -->
-                <div class="space-y-8" data-aos="fade-left">
-                    <div class="glass-card p-10 rounded-3xl bg-gradient-to-br from-dark-800 to-dark-900 border-accent-blue/20">
-                        <h4 class="text-2xl font-bold mb-6 flex items-center gap-3">
-                            <span class="text-3xl">🔄</span> The Data Flywheel
-                        </h4>
-                        <ul class="space-y-4 text-sm text-gray-400">
-                            <li><strong class="text-accent-blue">1. Hardware:</strong> Accessible, clinical-grade hardware drives mass adoption.</li>
-                            <li><strong class="text-accent-blue">2. Data:</strong> Millions of daily biometrics feed into proprietary AI models.</li>
-                            <li><strong class="text-accent-blue">3. Accuracy:</strong> AI achieves unmatched diagnostic accuracy (92%+).</li>
-                            <li><strong class="text-accent-blue">4. B2B:</strong> High accuracy attracts veterinary clinics to the platform.</li>
-                            <li><strong class="text-accent-blue">5. Revenue:</strong> Vet integration generates commission revenue & long-term retention.</li>
-                            <li><strong class="text-accent-blue">6. Network:</strong> Owners benchmark health; community drives organic growth.</li>
-                        </ul>
+                <div class="glass-card p-10 rounded-3xl border-t border-accent-pink" data-aos="fade-left">
+                    <h4 class="text-3xl font-display font-bold mb-2">Phase 2: Japan</h4>
+                    <p class="text-accent-pink font-bold tracking-widest uppercase text-sm mb-6">Premium Deployment</p>
+                    <p class="text-gray-400 mb-6">Targeting 8M elderly pet owners (65+). High willingness for subscription pricing. Algorithms trained at scale in India monetized at a premium.</p>
+                    <div class="bg-dark-900/50 p-4 rounded-xl border border-white/5">
+                        <span class="text-sm text-gray-400">Goal:</span>
+                        <p class="font-bold">Premium geriatric monitoring</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revenue Streams -->
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h3 class="text-3xl font-bold">Four Revenue Streams. One Ecosystem.</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Hardware -->
+                <div class="glass-panel p-8 rounded-2xl relative overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gray-500 to-gray-300"></div>
+                    <div class="text-3xl mb-4">⚙️</div>
+                    <h4 class="font-bold text-lg mb-2">Hardware Sale</h4>
+                    <p class="text-accent-red font-bold mb-4">₹4,500 <span class="text-gray-500 text-sm font-normal">/ ¥15,000</span></p>
+                    <p class="text-sm text-gray-400">Driven by an efficient sub-$40 BOM ensuring immediate profitability with a 65% gross margin.</p>
+                </div>
+                
+                <!-- SaaS -->
+                <div class="glass-panel p-8 rounded-2xl relative overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400"></div>
+                    <div class="text-3xl mb-4">☁️</div>
+                    <h4 class="font-bold text-lg mb-2">Pawsitive+ SaaS</h4>
+                    <p class="text-accent-red font-bold mb-4">₹500/mo <span class="text-gray-500 text-sm font-normal">/ ¥2,000/mo</span></p>
+                    <p class="text-sm text-gray-400">Unlocks continuous cloud history, early disease risk scoring, and unlimited AI triage.</p>
+                </div>
+
+                <!-- B2B Commission -->
+                <div class="glass-panel p-8 rounded-2xl relative overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-emerald-400"></div>
+                    <div class="text-3xl mb-4">🏥</div>
+                    <h4 class="font-bold text-lg mb-2">B2B Marketplace</h4>
+                    <p class="text-accent-red font-bold mb-4">Commission</p>
+                    <p class="text-sm text-gray-400">Clinic directories, instant shareable QR reports for vet visits, and emergency alerts.</p>
+                </div>
+
+                <!-- Teleconsultation -->
+                <div class="glass-panel p-8 rounded-2xl relative overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                    <div class="text-3xl mb-4">💻</div>
+                    <h4 class="font-bold text-lg mb-2">Teleconsultation</h4>
+                    <p class="text-accent-red font-bold mb-4">15-20% Fee</p>
+                    <p class="text-sm text-gray-400">Platform fee on paid video consultations. Doctor fee + commission split model aligns our revenue with vet success.</p>
+                </div>
+            </div>
+
+            <!-- Projection Timeline -->
+            <div class="mt-20 p-10 glass-card rounded-3xl" data-aos="fade-up">
+                <h4 class="text-2xl font-bold mb-8 text-center">3-Year Financial Projection</h4>
+                <div class="flex flex-col md:flex-row justify-between gap-8 relative">
+                    <div class="hidden md:block absolute top-6 left-10 right-10 h-1 bg-white/10 rounded-full z-0"></div>
+                    
+                    <div class="relative z-10 flex-1 text-center bg-dark-900/80 p-6 rounded-2xl border border-white/5">
+                        <div class="w-12 h-12 rounded-full bg-accent-red text-white flex items-center justify-center font-bold text-xl mx-auto mb-4 border-4 border-dark-900 shadow-xl">1</div>
+                        <h5 class="font-bold text-lg">Year 1 <span class="text-accent-red">(₹3 Cr)</span></h5>
+                        <p class="text-xs text-gray-400 mt-2">Device sales & subscriptions.<br/>Target: 15M urban Indian pet owners.</p>
                     </div>
 
-                    <div class="glass-card p-10 rounded-3xl">
-                        <h4 class="text-xl font-bold mb-4">Asia's Pet Boom: Japan & India</h4>
-                        <p class="text-gray-400 text-sm mb-4">
-                            Pets now outnumber children in Japan. India's pet population hit 39M. With aging societies and a ₹1.2 Lakh Crore+ combined pet economy, owners already spend heavily. Pawsitive simply converts that spend into guaranteed health outcomes.
-                        </p>
+                    <div class="relative z-10 flex-1 text-center bg-dark-900/80 p-6 rounded-2xl border border-white/5">
+                        <div class="w-12 h-12 rounded-full bg-accent-pink text-white flex items-center justify-center font-bold text-xl mx-auto mb-4 border-4 border-dark-900 shadow-xl">2</div>
+                        <h5 class="font-bold text-lg">Year 2 <span class="text-accent-pink">(₹15 Cr)</span></h5>
+                        <p class="text-xs text-gray-400 mt-2">Vet partnerships + Japan entry.<br/>Target: Japan's elderly pet owners.</p>
+                    </div>
+
+                    <div class="relative z-10 flex-1 text-center bg-dark-900/80 p-6 rounded-2xl border border-white/5">
+                        <div class="w-12 h-12 rounded-full bg-accent-blue text-white flex items-center justify-center font-bold text-xl mx-auto mb-4 border-4 border-dark-900 shadow-xl">3</div>
+                        <h5 class="font-bold text-lg">Year 3 <span class="text-accent-blue">(₹50 Cr+)</span></h5>
+                        <p class="text-xs text-gray-400 mt-2">Data licensing (anonymized data for pharma) + international expansion.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Hackathon Alignment & CTA -->
-    <section class="py-32 relative text-center border-t border-white/5">
-        <div class="absolute inset-0 bg-gradient-to-b from-dark-800 to-dark-900 z-0"></div>
-        <div class="relative z-10 max-w-4xl mx-auto px-6" data-aos="fade-up">
-            <h2 class="text-sm font-bold tracking-widest uppercase text-accent-red mb-3">Meeting The FAR AWAY Standard</h2>
-            <h3 class="text-4xl md:text-5xl font-display font-bold mb-6 text-white">Engineering Quality & Real-World Impact</h3>
-            <p class="text-lg text-gray-400 mb-12">
-                This project perfectly aligns with the FAR AWAY rules. We utilized <strong>creative AI</strong> (8 independent edge ML agents), <strong>strong hardware engineering</strong> (PCTG Core), and established clear <strong>real-world impact</strong> for global public health and pet longevity.
+    <!-- Chapter 6: Real Builders (Hackathon Results) -->
+    <section id="results" class="py-32 relative bg-dark-800 border-y border-white/5 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-accent-red font-bold tracking-widest uppercase mb-4">Execution Quality</h2>
+                <h3 class="text-4xl md:text-6xl font-display font-bold">Real builders.<br/>Real chaos. Real results.</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-card p-8 rounded-3xl flex items-start gap-6" data-aos="fade-right">
+                    <div class="text-5xl">🛠️</div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2 text-white">Hardware Completion</h4>
+                        <p class="text-gray-400 text-sm">11 physical sensors + 15 supporting electronic components fully integrated, soldered, and functional.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl flex items-start gap-6" data-aos="fade-left">
+                    <div class="text-5xl">🌍</div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2 text-white">Beta Deployment</h4>
+                        <p class="text-gray-400 text-sm">Live pilots running in Tokyo (50 elderly pet owners) and Delhi (urban owners), validating across distinct global markets.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl flex items-start gap-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="text-5xl">📊</div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2 text-white">Clinical Validation</h4>
+                        <p class="text-gray-400 text-sm"><strong>98% user satisfaction rate.</strong> AI models achieving 87% and 92% accuracy across multiple health conditions in live environments.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl flex items-start gap-6" data-aos="fade-left" data-aos-delay="100">
+                    <div class="text-5xl">🚀</div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2 text-white">Production Platform</h4>
+                        <p class="text-gray-400 text-sm">Fully engineered, production-ready system. Not a concept; from blueprint to the global stage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-32 relative text-center">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900 z-0"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6" data-aos="zoom-in">
+            <div class="w-24 h-24 mx-auto mb-8 bg-gradient-to-br from-accent-blue via-accent-pink to-accent-orange rounded-full flex items-center justify-center text-4xl shadow-[0_0_50px_rgba(255,42,95,0.4)] animate-pulse">
+                🐾
+            </div>
+            
+            <h2 class="text-5xl md:text-7xl font-display font-black mb-8 text-white">Empowering the Voiceless.</h2>
+            <p class="text-xl text-gray-400 mb-12 leading-relaxed">
+                From the crowded streets of Delhi to the quiet homes of Tokyo, Pawsitive Diagnostics ensures no companion suffers in silence. <br/><br/>
+                <strong class="text-white italic text-2xl font-display">The most unconditional trust in the world deserves the most attentive care.</strong>
             </p>
+            
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
                 <a href="https://pawsitive-diagnostics.vercel.app" target="_blank" class="px-10 py-5 bg-white text-black rounded-full font-bold text-xl hover:scale-105 transition-transform shadow-[0_0_40px_rgba(255,255,255,0.2)]">
                     Launch Web App
-                </a>
-                <a href="https://github.com/adilsukumar/Pawsitive_Diagnostics" target="_blank" class="px-10 py-5 glass-card text-white rounded-full font-bold text-xl hover:scale-105 transition-transform">
-                    View GitHub Repo
                 </a>
             </div>
         </div>
