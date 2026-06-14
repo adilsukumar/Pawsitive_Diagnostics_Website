@@ -105,8 +105,10 @@
 
         /* Custom Table Styling */
         table { border-collapse: separate; border-spacing: 0; width: 100%; }
-        th, td { padding: 1.25rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        th { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 1.1rem; }
+        th, td { padding: 0.75rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        @media (min-width: 768px) { th, td { padding: 1.25rem; } }
+        th { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 1rem; }
+        @media (min-width: 768px) { th { font-size: 1.1rem; } }
         td:first-child, th:first-child { text-align: left; }
         .highlight-col { background: rgba(255, 42, 95, 0.05); border-left: 1px solid rgba(255, 42, 95, 0.2); border-right: 1px solid rgba(255, 42, 95, 0.2); }
         .highlight-col-header { background: rgba(255, 42, 95, 0.1); border-top: 2px solid #ff2a5f; border-left: 1px solid rgba(255, 42, 95, 0.2); border-right: 1px solid rgba(255, 42, 95, 0.2); border-radius: 8px 8px 0 0; color: #ff2a5f;}
@@ -138,10 +140,22 @@
                 <a href="https://github.com/adilsukumar/Pawsitive_Diagnostics" target="_blank" class="hidden sm:flex px-5 py-2 glass-panel text-white rounded-full font-semibold text-sm hover:bg-white/10 transition-colors">
                     GitHub
                 </a>
-                <a href="https://pawsitive-diagnostics.vercel.app" target="_blank" class="px-5 py-2 bg-white text-black rounded-full font-semibold text-sm hover:bg-gray-200 transition-colors">
+                <a href="https://pawsitive-diagnostics.vercel.app" target="_blank" class="hidden sm:flex px-5 py-2 bg-white text-black rounded-full font-semibold text-sm hover:bg-gray-200 transition-colors">
                     Live Demo
                 </a>
+                <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
             </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-dark-900 border-t border-white/10 mt-4 px-6 py-4 flex flex-col gap-4">
+            <a href="#crisis" class="text-gray-300 hover:text-white text-sm font-medium">The Problem</a>
+            <a href="#markets" class="text-gray-300 hover:text-white text-sm font-medium">Global Need</a>
+            <a href="#hardware" class="text-gray-300 hover:text-white text-sm font-medium">Hardware</a>
+            <a href="#agents" class="text-gray-300 hover:text-white text-sm font-medium">AI Senses</a>
+            <a href="#faraway" class="text-gray-300 hover:text-white text-sm font-medium">Hackathon Alignment</a>
+            <a href="https://pawsitive-diagnostics.vercel.app" target="_blank" class="text-accent-red text-sm font-bold">Launch Web App</a>
         </div>
     </nav>
 
@@ -388,7 +402,7 @@
                 <div class="swiper-wrapper">
                     
                     <!-- BarkSense -->
-                    <div class="swiper-slide !w-[350px]">
+                    <div class="swiper-slide !w-[280px] sm:!w-[350px]">
                         <div class="glass-card h-[500px] rounded-3xl p-8 flex flex-col relative overflow-hidden group">
                             <div class="absolute -right-10 -top-10 w-40 h-40 bg-pink-500/20 blur-3xl rounded-full group-hover:bg-pink-500/40 transition-colors"></div>
                             <h4 class="text-3xl font-display font-bold mb-2">Bark<span class="text-gray-400 font-light">Sense</span> AI</h4>
@@ -402,7 +416,7 @@
                     </div>
 
                     <!-- TempSense -->
-                    <div class="swiper-slide !w-[350px]">
+                    <div class="swiper-slide !w-[280px] sm:!w-[350px]">
                         <div class="glass-card h-[500px] rounded-3xl p-8 flex flex-col relative overflow-hidden group">
                             <div class="absolute -right-10 -top-10 w-40 h-40 bg-red-500/20 blur-3xl rounded-full group-hover:bg-red-500/40 transition-colors"></div>
                             <h4 class="text-3xl font-display font-bold mb-2">Temp<span class="text-gray-400 font-light">Sense</span> AI</h4>
@@ -416,7 +430,7 @@
                     </div>
 
                     <!-- MotionSense -->
-                    <div class="swiper-slide !w-[350px]">
+                    <div class="swiper-slide !w-[280px] sm:!w-[350px]">
                         <div class="glass-card h-[500px] rounded-3xl p-8 flex flex-col relative overflow-hidden group">
                             <div class="absolute -right-10 -top-10 w-40 h-40 bg-purple-500/20 blur-3xl rounded-full group-hover:bg-purple-500/40 transition-colors"></div>
                             <h4 class="text-3xl font-display font-bold mb-2">Motion<span class="text-gray-400 font-light">Sense</span> AI</h4>
@@ -430,7 +444,7 @@
                     </div>
 
                     <!-- SkinSense -->
-                    <div class="swiper-slide !w-[350px]">
+                    <div class="swiper-slide !w-[280px] sm:!w-[350px]">
                         <div class="glass-card h-[500px] rounded-3xl p-8 flex flex-col relative overflow-hidden group">
                             <div class="absolute -right-10 -top-10 w-40 h-40 bg-blue-500/20 blur-3xl rounded-full group-hover:bg-blue-500/40 transition-colors"></div>
                             <h4 class="text-3xl font-display font-bold mb-2">Skin<span class="text-gray-400 font-light">Sense</span> AI</h4>
@@ -444,7 +458,7 @@
                     </div>
 
                     <!-- PressureSense -->
-                    <div class="swiper-slide !w-[350px]">
+                    <div class="swiper-slide !w-[280px] sm:!w-[350px]">
                         <div class="glass-card h-[500px] rounded-3xl p-8 flex flex-col relative overflow-hidden group">
                             <div class="absolute -right-10 -top-10 w-40 h-40 bg-orange-500/20 blur-3xl rounded-full group-hover:bg-orange-500/40 transition-colors"></div>
                             <h4 class="text-3xl font-display font-bold mb-2">Pressure<span class="text-gray-400 font-light">Sense</span> AI</h4>
@@ -458,7 +472,7 @@
                     </div>
 
                     <!-- VitalSense -->
-                    <div class="swiper-slide !w-[350px]">
+                    <div class="swiper-slide !w-[280px] sm:!w-[350px]">
                         <div class="glass-card h-[500px] rounded-3xl p-8 flex flex-col relative overflow-hidden group">
                             <div class="absolute -right-10 -top-10 w-40 h-40 bg-red-500/20 blur-3xl rounded-full group-hover:bg-red-500/40 transition-colors"></div>
                             <h4 class="text-3xl font-display font-bold mb-2">Vital<span class="text-gray-400 font-light">Sense</span> AI</h4>
@@ -472,7 +486,7 @@
                     </div>
 
                     <!-- LocationSense -->
-                    <div class="swiper-slide !w-[350px]">
+                    <div class="swiper-slide !w-[280px] sm:!w-[350px]">
                         <div class="glass-card h-[500px] rounded-3xl p-8 flex flex-col relative overflow-hidden group">
                             <div class="absolute -right-10 -top-10 w-40 h-40 bg-green-500/20 blur-3xl rounded-full group-hover:bg-green-500/40 transition-colors"></div>
                             <h4 class="text-3xl font-display font-bold mb-2">Location<span class="text-gray-400 font-light">Sense</span> AI</h4>
@@ -486,7 +500,7 @@
                     </div>
 
                     <!-- LightSense -->
-                    <div class="swiper-slide !w-[350px]">
+                    <div class="swiper-slide !w-[280px] sm:!w-[350px]">
                         <div class="glass-card h-[500px] rounded-3xl p-8 flex flex-col relative overflow-hidden group">
                             <div class="absolute -right-10 -top-10 w-40 h-40 bg-yellow-500/20 blur-3xl rounded-full group-hover:bg-yellow-500/40 transition-colors"></div>
                             <h4 class="text-3xl font-display font-bold mb-2">Light<span class="text-gray-400 font-light">Sense</span> AI</h4>
@@ -500,7 +514,7 @@
                     </div>
 
                     <!-- CombineSense -->
-                    <div class="swiper-slide !w-[350px]">
+                    <div class="swiper-slide !w-[280px] sm:!w-[350px]">
                         <div class="glass-card h-[500px] rounded-3xl p-8 flex flex-col relative overflow-hidden group">
                             <div class="absolute -right-10 -top-10 w-40 h-40 bg-emerald-500/20 blur-3xl rounded-full group-hover:bg-emerald-500/40 transition-colors"></div>
                             <h4 class="text-3xl font-display font-bold mb-2">Combine<span class="text-gray-400 font-light">Sense</span> AI</h4>
@@ -705,12 +719,17 @@
                 modifier: 2,
                 slideShadows: true,
             },
-            pagination: { el: '.swiper-pagination', clickable: true },
-            breakpoints: {
-                320: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-            }
+            pagination: { el: '.swiper-pagination', clickable: true }
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
         });
     </script>
 </body>
